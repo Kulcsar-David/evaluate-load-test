@@ -8,7 +8,7 @@
 
 # git clone https://github.com/Kulcsar-David/evaluate-load-test.git
 
-# cd /evaluate-load-test
+# cd evaluate-load-test
 
 # chmod +x evaluate-load-test-runner-v2.sh
 
