@@ -850,7 +850,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/opt/apache-jmeter-5.5/bin/result_output/summary-report-log-5.csv</stringProp>
+          <stringProp name="filename">/opt/apache-jmeter-5.5/bin/result_output/summary-report-log-1.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
