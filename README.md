@@ -1,6 +1,6 @@
 # docker build --no-cache -t jmeter_base:latest -f Jmeter_Dockerfile .
 
-# docker run -it jmeter_base:latest
+<!-- # docker run -it jmeter_base:latest -->
 
 # docker run -it -v ${pwd}<local-volume-folder>:/opt/apache-jmeter-5.5/bin/result_output/ jmeter_base:latest
 
