@@ -27,6 +27,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
   && apt-get install -y --no-install-recommends \
   git \
   openjdk-8-jre-headless
+RUN apt-get -y install jq
 # Step 6:
 # Download Command Runner and move it to lib folder
 WORKDIR ${JMETER_LIB_FOLDER}
