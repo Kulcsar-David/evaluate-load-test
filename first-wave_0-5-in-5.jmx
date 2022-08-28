@@ -29,9 +29,9 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Upload file" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="/home/dkulcsar/Documents/apache-jmeter-5.5/test-files/stitcher_test1_valid.csv" elementType="HTTPFileArg">
+              <elementProp name="/opt/apache-jmeter-5.5/bin/evaluate-load-test/stitcher_test1_valid.csv" elementType="HTTPFileArg">
                 <stringProp name="File.mimetype">text/csv</stringProp>
-                <stringProp name="File.path">/home/dkulcsar/Documents/apache-jmeter-5.5/test-files/stitcher_test1_valid.csv</stringProp>
+                <stringProp name="File.path">/opt/apache-jmeter-5.5/bin/evaluate-load-test/stitcher_test1_valid.csv</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
               </elementProp>
             </collectionProp>
@@ -850,13 +850,13 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/home/dkulcsar/Documents/apache-jmeter-5.5/results/summary-report-log-1.csv</stringProp>
+          <stringProp name="filename">/opt/apache-jmeter-5.5/bin/result_output/summary-report-log-5.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">/home/dkulcsar/Documents/apache-jmeter-5.5/test-files/dataset.csv</stringProp>
+          <stringProp name="filename">/opt/apache-jmeter-5.5/bin/evaluate-load-test/dataset.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
