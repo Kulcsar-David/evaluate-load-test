@@ -1,0 +1,20 @@
+NAME1,NAME1_LANG,NAME2,NAME2_LANG,ENTITY_TYPE,MATCH
+Peter Harding,eng,Pete Harding,eng,PERSON,Y
+Peter Harding,eng,Harding Peter,eng,PERSON,Y
+Peter Harding,eng,Pete Michael Harding,eng,PERSON,Y
+Peter Harding,eng,P. M. Harding,eng,PERSON,N
+Peter Harding,eng,Pat Harding,eng,PERSON,N
+Peter Harding,eng,P. B. Harding,eng,PERSON,N
+Peter Harding,eng,Pietro Hardin,eng,PERSON,N
+Basis Technology,,Basis,,ORGANIZATION,Y
+Basis Technology,,Basis Tech,,ORGANIZATION,Y
+Basis Technology,,Basis Solutions,,ORGANIZATION,N
+Basis Technology,,Bass Technology,,ORGANIZATION,N
+12/21/1978,,12/20/1978,,DATE,Y
+12/21/1978,,12/21/2078,,DATE,N
+12/21/1978,,12-21-1978,,DATE,Y
+12/21/1978,,2/21/1978,,DATE,N
+Fairfax,eng,Farefax,,LOCATION,Y
+Pikesville,,Peckville,eng,LOCATION,N
+123 Fake Street Springfield MO,,123 Fake St Springfield IL,,ADDRESS,N
+820 Forest Road,,820 Forrest Rd,,ADDRESS,Y

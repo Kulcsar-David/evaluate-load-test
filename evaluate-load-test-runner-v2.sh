@@ -1,5 +1,5 @@
 #!/bin/bash
-curl http://192.168.1.237:8090/rs/match-config | jq '.matchConfigurations | .[] | .id' >./test-files/dataset.csv
+curl http://192.168.1.237:8090/rs/match-config | jq '.matchConfigurations | .[] | .id' >./dataset.csv
 
 export JVM_ARGS="-Dnashorn.args=--no-deprecation-warning"
 
