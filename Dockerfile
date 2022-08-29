@@ -15,7 +15,6 @@ ENV JMETER_PLUGINS_FOLDER ${JMETER_LIB_FOLDER}ext/
 WORKDIR ${JMETER_HOME}
 RUN apt-get -y update \
   && apt-get -y upgrade \
-  && apt-get -y install p7zip-full p7zip-rar \
   && apt-get install -y --no-install-recommends \
   git \
   openjdk-8-jre-headless \
@@ -41,15 +40,8 @@ RUN wget https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/${JMETER_P
 WORKDIR ${JMETER_LIB_FOLDER}
 RUN java  -jar cmdrunner-2.2.1.jar --tool org.jmeterplugins.repository.PluginManagerCMD install-all-except jpgc-hadoop,jpgc-oauth,ulp-jmeter-autocorrelator-plugin,ulp-jmeter-videostreaming-plugin,ulp-jmeter-gwt-plugin,tilln-iso8583
 # Step 8:
-WORKDIR ${JMETER_HOME}
+WORKDIR ${JMETER_HOME}/bin
 # Step 9:
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV PATH="$JAVA_HOME/bin:${PATH}"
 RUN update-ca-certificates
-# Step 10:
-# Copying the test files
-COPY ./evaluate-load-test.zip /opt/apache-jmeter-${JMETER_VERSION}/bin
-RUN 7z x /opt/apache-jmeter-${JMETER_VERSION}/bin/evaluate-load-test.zip -o/opt/apache-jmeter-${JMETER_VERSION}/bin/
-RUN rm -rf /opt/apache-jmeter-${JMETER_VERSION}/bin/evaluate-load-test.zip
-RUN cd /opt/apache-jmeter-${JMETER_VERSION}/bin/evaluate-load-test
-RUN chmod +x /opt/apache-jmeter-${JMETER_VERSION}/bin/evaluate-load-test/evaluate-load-test-runner-v2.sh

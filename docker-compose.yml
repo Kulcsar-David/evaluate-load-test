@@ -2,7 +2,7 @@ version: '3.9' # optional since v1.27.0
 services:
   jmeter:
     image: jmeter_base:latest
-    entrypoint: ['/bin/sh', '-c']
     volumes:
-      - ${DIR}/results:/opt/apache-jmeter-5.5/bin/result_output
-    command: /opt/apache-jmeter-5.5/bin/evaluate-load-test/evaluate-load-test-runner-v2.sh
+      - '${DIR}/results:/opt/apache-jmeter-5.5/bin/result_output'
+      - '${DIR}/evaluate-load-test:/opt/apache-jmeter-5.5/bin/evaluate-load-test'
+    entrypoint: /opt/apache-jmeter-5.5/bin/evaluate-load-test/evaluate-load-test-runner-v2.sh
