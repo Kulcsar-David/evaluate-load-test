@@ -1,7 +1,6 @@
 version: '3.9' # optional since v1.27.0
 services:
   jmeter:
-    build: '1.0.0'
     image: jmeter_base:latest
     entrypoint: ['/bin/sh', '-c']
     volumes:
